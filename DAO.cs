@@ -107,6 +107,28 @@ namespace QuanLyBanHang
             combo.ValueMember = valueField;
             combo.DisplayMember = DisplayField;
         }
+        public static string GetFieldValues(string sql)
+        {
+            DAO.OpenConnection();
+            string ma = "";
+            SqlCommand cmd = new SqlCommand(sql, DAO.conn);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                ma = reader.GetValue(0).ToString();
+            }
+            reader.Close();
+            return ma;
+        }
+        public static DataTable GetDataToTable(string sql)
+        {
+            SqlDataAdapter Mydata = new SqlDataAdapter(sql, conn);
+            DataTable table = new DataTable();
+            Mydata.Fill(table);
+            return table;
+        }
+
 
 
     }

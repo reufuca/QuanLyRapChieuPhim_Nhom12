@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRap));
             this.lblMaRap = new System.Windows.Forms.Label();
             this.lblTenRap = new System.Windows.Forms.Label();
             this.txtMaRap = new System.Windows.Forms.TextBox();
@@ -41,13 +42,15 @@
             this.txtSophong = new System.Windows.Forms.TextBox();
             this.txtTongsoghe = new System.Windows.Forms.TextBox();
             this.GridViewRap = new System.Windows.Forms.DataGridView();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewRap)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMaRap
@@ -157,77 +160,110 @@
             this.GridViewRap.TabIndex = 2;
             this.GridViewRap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridViewRap_CellClick);
             // 
-            // btnThem
+            // groupBox2
             // 
-            this.btnThem.Location = new System.Drawing.Point(27, 365);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(113, 62);
-            this.btnThem.TabIndex = 3;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.groupBox2.Controls.Add(this.btnHuy);
+            this.groupBox2.Controls.Add(this.btnLuu);
+            this.groupBox2.Controls.Add(this.btnXoa);
+            this.groupBox2.Controls.Add(this.btnSua);
+            this.groupBox2.Controls.Add(this.btnThoat);
+            this.groupBox2.Controls.Add(this.btnThem);
+            this.groupBox2.Location = new System.Drawing.Point(12, 356);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(791, 84);
+            this.groupBox2.TabIndex = 60;
+            this.groupBox2.TabStop = false;
             // 
-            // btnSua
+            // btnHuy
             // 
-            this.btnSua.Location = new System.Drawing.Point(158, 365);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(113, 62);
-            this.btnSua.TabIndex = 3;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
+            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuy.Location = new System.Drawing.Point(540, 26);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(102, 39);
+            this.btnHuy.TabIndex = 53;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(292, 365);
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(414, 26);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(113, 62);
-            this.btnLuu.TabIndex = 3;
+            this.btnLuu.Size = new System.Drawing.Size(102, 39);
+            this.btnLuu.TabIndex = 49;
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(419, 365);
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(287, 26);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(113, 62);
-            this.btnXoa.TabIndex = 3;
+            this.btnXoa.Size = new System.Drawing.Size(102, 39);
+            this.btnXoa.TabIndex = 50;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
+            // btnSua
+            // 
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(163, 26);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(102, 39);
+            this.btnSua.TabIndex = 51;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(546, 365);
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(658, 26);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(113, 62);
-            this.btnThoat.TabIndex = 3;
+            this.btnThoat.Size = new System.Drawing.Size(115, 39);
+            this.btnThoat.TabIndex = 48;
             this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnHuy
+            // btnThem
             // 
-            this.btnHuy.Location = new System.Drawing.Point(665, 365);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(113, 62);
-            this.btnHuy.TabIndex = 3;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(33, 26);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(115, 39);
+            this.btnThem.TabIndex = 52;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // FrmRap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.btnThem);
+            this.ClientSize = new System.Drawing.Size(823, 481);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.GridViewRap);
             this.Controls.Add(this.txtTenrap);
             this.Controls.Add(this.txtDienthoai);
@@ -241,10 +277,12 @@
             this.Controls.Add(this.lblSoPhong);
             this.Controls.Add(this.lblDiaChi);
             this.Controls.Add(this.lblMaRap);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmRap";
             this.Text = "Danh mục Rạp";
             this.Load += new System.EventHandler(this.FrmRap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridViewRap)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,11 +303,12 @@
         private System.Windows.Forms.TextBox txtSophong;
         private System.Windows.Forms.TextBox txtTongsoghe;
         private System.Windows.Forms.DataGridView GridViewRap;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnThem;
     }
 }

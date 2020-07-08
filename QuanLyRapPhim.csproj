@@ -47,6 +47,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO.cs" />
+    <Compile Include="FrmGhe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGhe.Designer.cs">
+      <DependentUpon>FrmGhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGioChieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGioChieu.Designer.cs">
+      <DependentUpon>FrmGioChieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHangSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHangSX.Designer.cs">
+      <DependentUpon>FrmHangSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLichChieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLichChieu.Designer.cs">
+      <DependentUpon>FrmLichChieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuocSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuocSX.Designer.cs">
+      <DependentUpon>FrmNuocSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhim.Designer.cs">
+      <DependentUpon>FrmPhim.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPhongChieu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,8 +101,68 @@
     <Compile Include="FrmRap.Designer.cs">
       <DependentUpon>FrmRap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTheLoai.Designer.cs">
+      <DependentUpon>FrmTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTimKiemLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTimKiemLich.Designer.cs">
+      <DependentUpon>FrmTimKiemLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTimKiemPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTimKiemPhim.Designer.cs">
+      <DependentUpon>FrmTimKiemPhim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVe.Designer.cs">
+      <DependentUpon>FrmVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InDoanhThuPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InDoanhThuPhim.Designer.cs">
+      <DependentUpon>InDoanhThuPhim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InDoanhThuRap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InDoanhThuRap.Designer.cs">
+      <DependentUpon>InDoanhThuRap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InPhimDangChieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InPhimDangChieu.Designer.cs">
+      <DependentUpon>InPhimDangChieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmGhe.resx">
+      <DependentUpon>FrmGhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGioChieu.resx">
+      <DependentUpon>FrmGioChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHangSX.resx">
+      <DependentUpon>FrmHangSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLichChieu.resx">
+      <DependentUpon>FrmLichChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuocSX.resx">
+      <DependentUpon>FrmNuocSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhim.resx">
+      <DependentUpon>FrmPhim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPhongChieu.resx">
       <DependentUpon>FrmPhongChieu.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +171,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRap.resx">
       <DependentUpon>FrmRap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTheLoai.resx">
+      <DependentUpon>FrmTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTimKiemLich.resx">
+      <DependentUpon>FrmTimKiemLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTimKiemPhim.resx">
+      <DependentUpon>FrmTimKiemPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVe.resx">
+      <DependentUpon>FrmVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InDoanhThuPhim.resx">
+      <DependentUpon>InDoanhThuPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InDoanhThuRap.resx">
+      <DependentUpon>InDoanhThuRap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InPhimDangChieu.resx">
+      <DependentUpon>InPhimDangChieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +221,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\69813294-cinema-background-with-a-film-reel-popcorn-drink-and-tickets-vector-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
